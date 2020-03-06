@@ -4,7 +4,7 @@
 #
 Name     : pyRFC3339
 Version  : 1.1
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/00/52/75ea0ae249ba885c9429e421b4f94bc154df68484847f1ac164287d978d7/pyRFC3339-1.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/00/52/75ea0ae249ba885c9429e421b4f94bc154df68484847f1ac164287d978d7/pyRFC3339-1.1.tar.gz
 Summary  : Generate and parse RFC 3339 timestamps
@@ -20,43 +20,7 @@ BuildRequires : nose-python
 BuildRequires : pytz
 
 %description
-Description
 ===========
-
-.. image:: https://travis-ci.org/kurtraschke/pyRFC3339.svg?branch=master
-    :target: https://travis-ci.org/kurtraschke/pyRFC3339
-
-pyRFC3339 parses and generates :RFC:`3339`-compliant timestamps using `Python <https://www.python.org/>`_ `datetime.datetime <https://docs.python.org/2/library/datetime.html#datetime-objects>`_ objects.
-
->>> from pyrfc3339 import generate, parse
->>> from datetime import datetime
->>> import pytz
->>> generate(datetime.utcnow().replace(tzinfo=pytz.utc)) #doctest:+ELLIPSIS
-'...T...Z'
->>> parse('2009-01-01T10:01:02Z')
-datetime.datetime(2009, 1, 1, 10, 1, 2, tzinfo=<UTC>)
->>> parse('2009-01-01T14:01:02-04:00')
-datetime.datetime(2009, 1, 1, 14, 1, 2, tzinfo=<UTC-04:00>)
-
-Installation
-============
-
-To install the latest version from `PyPI <https://pypi.python.org/pypi>`_:
-
-``$ pip install pyRFC3339``
-
-To install the latest development version:
-
-``$ pip install https://github.com/kurtraschke/pyRFC3339/tarball/master#egg=pyRFC3339-dev``
-
-To build the documentation with Sphinx:
-
-#. ``$ pip install Sphinx``
-#. ``$ python setup.py build_sphinx``
-
-The documentation is also available online at:
-
-``https://pythonhosted.org/pyRFC3339/``
 
 %package license
 Summary: license components for the pyRFC3339 package.
@@ -80,7 +44,7 @@ python components for the pyRFC3339 package.
 Summary: python3 components for the pyRFC3339 package.
 Group: Default
 Requires: python3-core
-Provides: pypi(pyRFC3339)
+Provides: pypi(pyrfc3339)
 Requires: pypi(pytz)
 
 %description python3
@@ -96,8 +60,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583293529
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1583455749
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
