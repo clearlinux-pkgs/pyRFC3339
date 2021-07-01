@@ -4,7 +4,7 @@
 #
 Name     : pyRFC3339
 Version  : 1.1
-Release  : 10
+Release  : 11
 URL      : https://files.pythonhosted.org/packages/00/52/75ea0ae249ba885c9429e421b4f94bc154df68484847f1ac164287d978d7/pyRFC3339-1.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/00/52/75ea0ae249ba885c9429e421b4f94bc154df68484847f1ac164287d978d7/pyRFC3339-1.1.tar.gz
 Summary  : Generate and parse RFC 3339 timestamps
